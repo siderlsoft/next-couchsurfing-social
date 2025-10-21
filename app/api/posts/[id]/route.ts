@@ -4,8 +4,8 @@ import posts from "@/data/posts.json";
 import users from "@/data/users.json";
 import { formatDateUTC } from "@/lib/helper";
 
-export async function GET(_req: NextRequest, context: { params: { id: string } }) {
-  const { id } = context.params;
+export async function GET(_req: NextRequest, context: { params: Promise<{ id: string }> }) {
+  const { id } = await context.params;
 
   const post = posts.find((p) => p.id === id);
   if (!post) {
@@ -17,6 +17,7 @@ export async function GET(_req: NextRequest, context: { params: { id: string } }
     ...post,
     author: author?.name,
     authorAvatar: author?.avatarUrl,
+    authorRole: author?.role,
     createdAtText: formatDateUTC(post.createdAt),
   });
 }
