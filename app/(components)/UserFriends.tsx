@@ -4,7 +4,7 @@ import { Avatar } from 'primereact/avatar';
 import { Button } from 'primereact/button';
 import Link from 'next/link';
 
-export default async function UserFriends({ userId }: { userId: string }) {
+export default async function UserFriends({ userId, showFriendsPostsButton = true }: { userId: string; showFriendsPostsButton?: boolean }) {
     const friends = await getUserFriends(userId);
 
     return (
@@ -13,19 +13,21 @@ export default async function UserFriends({ userId }: { userId: string }) {
 
             <div className='flex flex-wrap justify-center gap-4 mt-4'>
                 {friends.map((friend: User) => (
-                    <a key={friend.id} className="flex justify-center">
+                    <Link key={friend.id} href={`/profile/${friend.id}`} prefetch className="flex justify-center">
                         {friend.avatarUrl ? <Avatar image={friend.avatarUrl} size="large" shape="circle" /> :
                             <Avatar icon="pi pi-user" size="large" shape="circle" />
                         }
-                    </a>
+                    </Link>
                 ))}
             </div>
 
-            <div className='flex justify-center mt-8'>
-                <Link href="/">
-                    <Button label="See Friend's Posts" severity="warning" rounded />
-                </Link>
-            </div>
+            {showFriendsPostsButton && (
+                <div className='flex justify-center mt-8'>
+                    <Link href="/">
+                        <Button label="See Friend's Posts" severity="warning" rounded />
+                    </Link>
+                </div>
+            )}
         </div>
     );
 }

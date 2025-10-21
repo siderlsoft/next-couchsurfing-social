@@ -8,12 +8,11 @@ export async function GET(request: Request, context: { params: Promise<{ id: str
     // Find the user's friends
     const userFriends = friends.find(friend => friend.userId === id)?.friends || [];
 
-    // Map friend IDs to user details
-    const friendDetails = userFriends.map(friendId => users.find(user => user.id === friendId));
+    // Map friend IDs to user details, filtering out undefined values
+    const friendDetails = userFriends
+        .map(friendId => users.find(user => user.id === friendId))
+        .filter(Boolean);
 
-    if (!friendDetails.length) {
-        return NextResponse.json({ error: 'No friends found for this user.' }, { status: 404 });
-    }
-
+    // Always return an array, even if empty
     return NextResponse.json(friendDetails);
 }
