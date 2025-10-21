@@ -1,5 +1,6 @@
 import { Avatar } from 'primereact/avatar'
 import { Suspense } from "react";
+import Link from 'next/link';
 import FeedServer from "./(components)/FeedServer";
 
 export const revalidate = 30;
@@ -10,10 +11,10 @@ export default async function Feed({ searchParams }: { searchParams: Promise<{ p
 
   return (
     <div className="space-y-4">
-      <a href="/profile" className='flex justify-center mt-4'>
+      <Link href="/profile" className='flex justify-center mt-4'>
         <Avatar icon="pi pi-user" shape="circle" />
         <h1 className="text-2xl font-bold ml-2">My Profile</h1>
-      </a>
+      </Link>
       <h1 className="text-2xl font-bold flex justify-center mt-4 bg-orange-500">Friends posts</h1>
 
       <Suspense fallback={<div className="animate-pulse h-24 rounded-xl bg-gray-100" />}>
