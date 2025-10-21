@@ -2,8 +2,8 @@ import { NextResponse } from 'next/server';
 import friends from '@/data/friends.json';
 import users from '@/data/users.json';
 
-export async function GET(request: Request, { params }: { params: { id: string } }) {
-    const { id } = params;
+export async function GET(request: Request, context: { params: { id: string } }) {
+    const { id } = context.params;
 
     // Find the user's friends
     const userFriends = friends.find(friend => friend.userId === id)?.friends || [];

@@ -2,8 +2,9 @@ import PostCard from "@/app/(components)/PostCard";
 import { getPost } from '@/lib/api';
 import Link from "next/link";
 
-export default async function PostDetail({ params }: { params: { id: string } }) {
-    const post = await getPost(params.id);
+export default async function PostDetail({ params }: { params: Promise<{ id: string }> }) {
+    const resolvedParams = await params;
+    const post = await getPost(resolvedParams.id);
 
     return (
         <section className="flex flex-col items-center mt-4 space-y-4">
