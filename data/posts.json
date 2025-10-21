@@ -1,0 +1,86 @@
+[
+  {
+    "id": "p1",
+    "authorId": "u1",
+    "title": "This is Europe",
+    "description": "My last trip to Europe was amazing!",
+    "img": "/images/europe-demo.jpg",
+    "createdAt": "2025-07-20T18:00:00.000Z",
+    "likes": 10
+  },
+  {
+    "id": "p2",
+    "authorId": "u2",
+    "title": "New York buildings from the top",
+    "description": "The view from the top of the Empire State Building is breathtaking.",
+    "img": "/images/spidey-ny.png",
+    "createdAt": "2025-09-12T09:30:00.000Z",
+    "likes": 5
+  },
+  {
+    "id": "p3",
+    "authorId": "u3",
+    "title": "Japan Japan Japan",
+    "description": "Exploring the vibrant culture and technology of Japan.",
+    "img": "/images/japan-demo.jpg",
+    "createdAt": "2024-12-05T14:15:00.000Z",
+    "likes": 8
+  },
+  {
+    "id": "p4",
+    "authorId": "u5",
+    "title": "Guadalajara Highlights",
+    "description": "Discovering the beauty and culture of Guadalajara.",
+    "createdAt": "2025-03-22T11:45:00.000Z",
+    "likes": 12
+  },
+  {
+    "id": "p5",
+    "authorId": "u6",
+    "title": "Who in the stadium?",
+    "description": "Looking for friends in the crowd at the big game!",
+    "createdAt": "2025-06-15T19:20:00.000Z",
+    "likes": 7
+  },
+  {
+    "id": "p6",
+    "authorId": "u7",
+    "title": "Best host experience",
+    "description": "Hosting travelers from around the world has been a rewarding experience.",
+    "createdAt": "2025-08-30T16:10:00.000Z",
+    "likes": 9
+  },
+  {
+    "id": "p7",
+    "authorId": "u8",
+    "title": "Sunset in LA",
+    "description": "Enjoying the beautiful sunset at Venice Beach.",
+    "createdAt": "2025-05-18T20:05:00.000Z",
+    "likes": 11
+  },
+  {
+    "id": "p8",
+    "authorId": "u9",
+    "title": "Miami Vibes",
+    "description": "Soaking up the sun and fun in Miami!",
+    "createdAt": "2025-04-10T13:55:00.000Z",
+    "likes": 6
+  },
+  {
+    "id": "p9",
+    "authorId": "u10",
+    "title": "Exploring Guadalajara",
+    "description": "A weekend adventure in my hometown.",
+    "img": "/images/gdl-demo.jpg",
+    "createdAt": "2025-02-28T10:25:00.000Z",
+    "likes": 4
+  }, 
+  {
+    "id": "p10",
+    "authorId": "u1",
+    "title": "Backpacking through Asia",
+    "description": "An unforgettable journey across multiple countries.",
+    "createdAt": "2025-01-15T08:40:00.000Z",
+    "likes": 15
+  }
+]

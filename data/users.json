@@ -1,0 +1,67 @@
+[
+    {
+        "id": "u1",
+        "name": "Grace Gleen",
+        "role": "Traveler",
+        "location": "Guadalajara, MX",
+        "avatarUrl": "/images/avatar2.jpg"
+    },
+    {
+        "id": "u2",
+        "name": "Peter Parker",
+        "role": "Traveler",
+        "location": "New York, NY",
+        "avatarUrl": "/images/spidey-avatar.jpg"
+    },
+    {
+        "id": "u3",
+        "name": "Gabrel Manriquez",
+        "role": "Traveler",
+        "location": "Tokyo, JP",
+        "avatarUrl": "/images/avatar1.jpg"
+    },
+    {
+        "id": "u4",
+        "name": "Enrique Soto",
+        "role": "Traveler",
+        "location": "Guadalajara, MX",
+        "avatarUrl": "/images/avatar3.jpg"
+    },
+    {
+        "id": "u5",
+        "name": "Alice Johnson",
+        "role": "Host",
+        "location": "San Francisco, CA"
+    },
+    {
+        "id": "u6",
+        "name": "Bob Smith",
+        "role": "Host",
+        "location": "Chicago, IL"
+    },
+    {
+        "id": "u7",
+        "name": "Charlie Brown",
+        "role": "Host",
+        "location": "Austin, TX"
+    },
+    {
+        "id": "u8",
+        "name": "Diana Prince",
+        "role": "Host",
+        "location": "Los Angeles, CA",
+        "avatarUrl": "/images/avatar10.jpg"
+    },
+    {
+        "id": "u9",
+        "name": "Ethan Hunt",
+        "role": "Traveler",
+        "location": "Miami, FL"
+    },
+    {
+        "id": "u10",
+        "name": "Fiona Gallagher",
+        "role": "Traveler",
+        "location": "Boston, MA"
+    }
+]
