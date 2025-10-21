@@ -2,6 +2,8 @@
 
 A simple social networking webapp built with Next.js that demonstrates basic social capabilities including user profiles, friend connections, and post sharing.
 
+Try the app directly in: https://next-couchsurfing-social-6etiht045.vercel.app/
+
 ## 🚀 Getting Started
 
 ### Prerequisites
